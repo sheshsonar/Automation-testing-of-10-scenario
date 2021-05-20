@@ -18,7 +18,7 @@ public class CartPage {
 	
 	WebDriver driver = null;
 	
-	@BeforeMethod
+	@BeforeMethod // what should happen before the test is launch.. settinh up environment for test to run.
 	public void launch()
 	{
 		System.setProperty("webdriver.chrome.driver","C:\\impdontdelete\\chromedriver_win32\\chromedriver.exe");
@@ -30,27 +30,26 @@ public class CartPage {
 	
 	
 		
-  @Test(priority = 1)
+  @Test(priority = 1) // This test verifies the correct shop page open or not by verifying the url.
   public void crtpageveri() throws IOException {
 	  JupitorCartPage j1 = new JupitorCartPage(driver);
-	  j1.crtpageverify();
+	  j1.crtpageverify();// Calling method crtpageverify to verify the csrt page
 	  JupitorHomePage j2 = new JupitorHomePage(driver);
-	  j2.Scnshot();
+	  j2.Scnshot(); // calling method to take a screenshot.
 	  
   }    
   
   
-  @Test(priority = 2)
+  @Test(priority = 2) // This test verifies the item is added to cart or not after clicking buy.
   public void shoooppge() throws IOException, BiffException { 
 	  JupitorCartPage j1 = new JupitorCartPage(driver);
-	  j1.crtpageverify();
 	  j1.shppge();
 	 	  
   }
   
   
   
-@Test(dataProvider = "dp")
+@Test(dataProvider = "dp") // This test case verifies checkout button , verfies order form , payment details, and confirms the order is placed or not.
   public void chhkcrt(String fname, String lname, String emla, String phna, String adrs, String crdtype, String cdrddtl) throws IOException, BiffException, InterruptedException { 
 	  JupitorCartPage j1 = new JupitorCartPage(driver);
 	 
@@ -60,7 +59,7 @@ public class CartPage {
 
   
   
-  @DataProvider
+  @DataProvider // Used to feed the data to the chkkrt method.
   public Object[][] dp() throws BiffException, IOException {
 	  
 	  readexcel rx = new readexcel();
@@ -91,7 +90,7 @@ public class CartPage {
   
   
      
-  @AfterMethod
+  @AfterMethod // After method is used to do the necessery things 
   public void close()
   {
 	  driver.close();
