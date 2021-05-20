@@ -17,7 +17,7 @@ public class ContactPage {
 	
 	WebDriver driver = null;
 	
-	@BeforeMethod
+	@BeforeMethod // what should happen before the test is launch.. settinh up environment for test to run.
 	public void launch()
 	{
 		System.setProperty("webdriver.chrome.driver","C:\\impdontdelete\\chromedriver_win32\\chromedriver.exe");
@@ -28,8 +28,8 @@ public class ContactPage {
 	
 	
 	
-		
-  @Test(priority = 1)
+		 
+  @Test(priority = 1) // Validation of the correct conatct page is open ornot.
   public void contpageveri() throws IOException {
 	  
 	  JupitorContactPage j1 = new JupitorContactPage(driver);
@@ -45,7 +45,7 @@ public class ContactPage {
   
   
   
-  @Test(dataProvider = "dp")
+  @Test(dataProvider = "dp") // Test verifies the feedback form by various inputs from excel sheet
   public void feedbk(String fname,String lname,String eml,String phn,String msg) throws IOException, BiffException, InterruptedException { 
 	  
 	  JupitorContactPage j1 = new JupitorContactPage(driver);
@@ -54,7 +54,7 @@ public class ContactPage {
 	 	  
   }
   
-  @DataProvider
+  @DataProvider // feeding the data to feedbk string.
   public Object[][] dp() throws BiffException, IOException {
 	  
 	  readexcel rx = new readexcel();
@@ -80,7 +80,7 @@ public class ContactPage {
   }
   
   
-  @Test
+  @Test // Validation of the back button after feedback is submitted sucessfully.
   public void bcbuttnvalid() throws IOException
   {
 	  JupitorContactPage j1 = new JupitorContactPage(driver);
@@ -93,7 +93,7 @@ public class ContactPage {
   }
  
     
-  @AfterMethod
+  @AfterMethod // After method is used to do the necessery things after the test case is finished.
   public void close() throws IOException
   {
 		JupitorHomePage j2 = new JupitorHomePage(driver);
