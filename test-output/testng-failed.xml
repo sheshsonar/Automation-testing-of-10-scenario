@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [juipiterToys]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="juipiterToysTest(failed)">
+    <classes>
+      <class name="PageObjectModel.HomePage">
+        <methods>
+          <include name="login" invocation-numbers="0"/>
+          <include name="close"/>
+          <include name="launch"/>
+        </methods>
+      </class> <!-- PageObjectModel.HomePage -->
+      <class name="PageObjectModel.ContactPage">
+        <methods>
+          <include name="close"/>
+          <include name="feedbk" invocation-numbers="0"/>
+          <include name="launch"/>
+        </methods>
+      </class> <!-- PageObjectModel.ContactPage -->
+      <class name="PageObjectModel.CartPage">
+        <methods>
+          <include name="chhkcrt" invocation-numbers="0"/>
+          <include name="launch"/>
+          <include name="close"/>
+        </methods>
+      </class> <!-- PageObjectModel.CartPage -->
+    </classes>
+  </test> <!-- juipiterToysTest(failed) -->
+</suite> <!-- Failed suite [juipiterToys] -->

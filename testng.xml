@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="juipiterToys">
+  <test thread-count="5" name="juipiterToysTest">
+    <classes>
+      <class name="PageObjectModel.HomePage"/>
+      <class name="PageObjectModel.ContactPage"/>
+      <class name="PageObjectModel.CartPage"/>
+    </classes>
+  </test> <!-- juipiterToysTest -->
+</suite> <!-- juipiterToys -->

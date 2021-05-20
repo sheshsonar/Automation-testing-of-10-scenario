@@ -1,0 +1,46 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "https://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="8">juipiterToys</th></tr>
+<tr><td><a href="#t0">juipiterToysTest</a></td><td class="num">11</td><td class="num">0</td><td class="num">0</td><td class="num attn">3</td><td class="num">85,655</td><td></td><td></td></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">juipiterToys</th></tr></tbody><tbody id="t0"><tr><th colspan="4">juipiterToysTest &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">PageObjectModel.CartPage</td><td><a href="#m0">chhkcrt</a></td><td rowspan="1">1621489570080</td><td rowspan="1">1559</td></tr><tr class="failedodd"><td rowspan="1">PageObjectModel.ContactPage</td><td><a href="#m1">feedbk</a></td><td rowspan="1">1621489534645</td><td rowspan="1">170</td></tr><tr class="failedeven"><td rowspan="1">PageObjectModel.HomePage</td><td><a href="#m2">login</a></td><td rowspan="1">1621489515966</td><td rowspan="1">241</td></tr><tr><th colspan="4">juipiterToysTest &#8212; passed</th></tr><tr class="passedeven"><td rowspan="4">PageObjectModel.CartPage</td><td><a href="#m3">chhkcrt</a></td><td rowspan="2">1621489584179</td><td rowspan="2">5645</td></tr><tr class="passedeven"><td><a href="#m4">chhkcrt</a></td></tr><tr class="passedeven"><td><a href="#m5">crtpageveri</a></td><td rowspan="1">1621489593538</td><td rowspan="1">382</td></tr><tr class="passedeven"><td><a href="#m6">shoooppge</a></td><td rowspan="1">1621489597404</td><td rowspan="1">574</td></tr><tr class="passedodd"><td rowspan="4">PageObjectModel.ContactPage</td><td><a href="#m7">bcbuttnvalid</a></td><td rowspan="1">1621489530774</td><td rowspan="1">499</td></tr><tr class="passedodd"><td><a href="#m8">contpageveri</a></td><td rowspan="1">1621489565375</td><td rowspan="1">361</td></tr><tr class="passedodd"><td><a href="#m9">feedbk</a></td><td rowspan="2">1621489544591</td><td rowspan="2">17578</td></tr><tr class="passedodd"><td><a href="#m10">feedbk</a></td></tr><tr class="passedeven"><td rowspan="3">PageObjectModel.HomePage</td><td><a href="#m11">hmpageveri</a></td><td rowspan="1">1621489527245</td><td rowspan="1">357</td></tr><tr class="passedeven"><td><a href="#m12">login</a></td><td rowspan="2">1621489519334</td><td rowspan="2">722</td></tr><tr class="passedeven"><td><a href="#m13">login</a></td></tr></tbody>
+</table>
+<h2>juipiterToysTest</h2><h3 id="m0">PageObjectModel.CartPage#chhkcrt</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th></tr><tr class="param stripe"><td>null</td><td>null</td><td>null</td><td>null</td><td>null</td><td>null</td><td>null</td></tr><tr><th colspan="7">Exception</th></tr><tr><td colspan="7"><div class="stacktrace">java.lang.IllegalArgumentException: Keys to send should be a not null CharSequence
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:97)
+	at PageObjectModel.JupitorCartPage.cartpgevalidtn(JupitorCartPage.java:99)
+	at PageObjectModel.CartPage.chhkcrt(CartPage.java:57)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 27 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">PageObjectModel.ContactPage#feedbk</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th></tr><tr class="param stripe"><td>null</td><td>null</td><td>null</td><td>null</td><td>null</td></tr><tr><th colspan="5">Exception</th></tr><tr><td colspan="5"><div class="stacktrace">java.lang.IllegalArgumentException: Keys to send should be a not null CharSequence
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:97)
+	at PageObjectModel.JupitorContactPage.dofeedbck(JupitorContactPage.java:63)
+	at PageObjectModel.ContactPage.feedbk(ContactPage.java:52)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 27 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">PageObjectModel.HomePage#login</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>null</td><td>null</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">java.lang.IllegalArgumentException: Keys to send should be a not null CharSequence
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:97)
+	at PageObjectModel.JupitorHomePage.dologin(JupitorHomePage.java:58)
+	at PageObjectModel.HomePage.login(HomePage.java:50)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 27 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">PageObjectModel.CartPage#chhkcrt</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th></tr><tr class="param stripe"><td>Chai</td><td>Kala</td><td>chai@gmail.com</td><td>3232323232</td><td>24 Apex St, Balmoral, 4171</td><td>Mastercard</td><td>4567 5432 2134 5645</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">PageObjectModel.CartPage#chhkcrt</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th></tr><tr class="param stripe"><td>shesh</td><td>Sonar</td><td>sheshbhushansonar@gmail.com</td><td>1234567890</td><td>6 wentworth pde, Balmoral, 4171</td><td>Visa</td><td>1234 1234 1234 1234</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">PageObjectModel.CartPage#crtpageveri</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">PageObjectModel.CartPage#shoooppge</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">PageObjectModel.ContactPage#bcbuttnvalid</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">PageObjectModel.ContactPage#contpageveri</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m9">PageObjectModel.ContactPage#feedbk</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th></tr><tr class="param stripe"><td>Chai</td><td>Kala</td><td>chai@gmail.com</td><td>3232323232</td><td>This is my msg asdasdsdcsdcasd</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m10">PageObjectModel.ContactPage#feedbk</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th></tr><tr class="param stripe"><td>shesh</td><td>Sonar</td><td>sheshbhushansonar@gmail.com</td><td>1234567890</td><td>This is my msg asdasdasd</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m11">PageObjectModel.HomePage#hmpageveri</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m12">PageObjectModel.HomePage#login</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>shesh</td><td>1234</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m13">PageObjectModel.HomePage#login</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>Chai</td><td>4323</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>
